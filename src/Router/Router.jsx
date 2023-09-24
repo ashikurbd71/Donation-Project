@@ -15,7 +15,8 @@ import Statistics from '../Pages/Statistics/Statistics';
 
         {
             path: "/",
-            element:<Home></Home>
+            element:<Home></Home>,
+            loader: () => fetch('donation.json'),
         },
         {
             path: "/donation",
