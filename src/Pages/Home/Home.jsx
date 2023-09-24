@@ -6,7 +6,7 @@ import { useLoaderData } from 'react-router-dom';
 
 const Home = () => {
 
-      const donation =  useLoaderData()
+    
      
     return (
 
@@ -17,10 +17,15 @@ const Home = () => {
 
         </div>
 
-          <div className='mx-auto max-w-screen-xl px-5 lg:px-0'>
+          <div className='mx-auto max-w-screen-xl px-5 lg:px-0 '>
 
-               <Donation donation={donation}></Donation>
-
+               <Donation></Donation>
+  {/* <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5'>
+               {
+                    donations.map(donation => <Donation donation={donation} key={donation.id}></Donation> )
+                } 
+  </div> */}
+               
           </div>
 
         </>

@@ -4,6 +4,7 @@ import Mainlayout from '../Mainlayout/Mainlayout';
 import Home from '../Pages/Home/Home';
 import Donation from '../Pages/Donation/Donation';
 import Statistics from '../Pages/Statistics/Statistics';
+import Donationinfo from '../Component/Donation/Donationinfo';
 
   const router = createBrowserRouter([
 
@@ -16,7 +17,7 @@ import Statistics from '../Pages/Statistics/Statistics';
         {
             path: "/",
             element:<Home></Home>,
-            loader: () => fetch('donation.json'),
+           
         },
         {
             path: "/donation",
@@ -25,7 +26,15 @@ import Statistics from '../Pages/Statistics/Statistics';
         {
             path: "/statistic",
             element:<Statistics></Statistics>
-        }
+        },
+
+        {
+            path: "/donationinfo/:id",
+            element:<Donationinfo></Donationinfo>,
+            loader: () => fetch('donation.json')
+        },
+
+        
       ]
    }
 
