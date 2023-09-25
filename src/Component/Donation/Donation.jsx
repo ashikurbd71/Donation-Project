@@ -29,17 +29,22 @@ const Donation = ({donation}) => {
            setInputvlue(inputtext)
       }
 
+   
+
       const serachvalue = () => {
 
         const search = donations?.filter(data => data.category.toLowerCase() == inputvalue.toLowerCase())
          setShowitem(search)
+
+       
       }
-    
+
+     
         
     return (
 
       <>
-   <div className='bg-[#FFFFFFF2] mx-auto w-full'>
+   <div className='bg-[#FFFFFFF2]  w-full'>
    <Banner searchinput = {serachinput} serachvalue = {serachvalue}></Banner>
    </div>
    

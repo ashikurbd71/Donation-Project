@@ -53,6 +53,7 @@ export default function App() {
 
   return (
 
+    <>
      <div className="w-ful h-screen  flex justify-center items-center">
     <PieChart width={400} height={400}>
       <Pie
@@ -71,6 +72,24 @@ export default function App() {
       </Pie>
     </PieChart>
 
+    
+
     </div>
+
+<div className="flex gap-3 justify-center mb-20">
+<div className="flex items-center gap-1">
+      <h1 className="text-xl font-semibold">Your Donation : </h1>
+      <div className="w-14 h-2 bg-red-500">
+          </div>
+      </div>
+        <div className="flex items-center gap-1">
+      <h1 className="text-xl font-semibold">Total Donation : </h1>
+
+          <div className="w-14 h-2 bg-green-500">
+          </div>
+          </div>
+    </div>
+
+    </>
   );
 }

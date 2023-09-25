@@ -15,7 +15,7 @@ const Navber = () => {
         
       
    <div className='flex'>
-      <li className='text-[18px] font-bold mr-8 hidden lg:block'>
+      <li className='text-[18px] font-bold lg:mr-8 hidden lg:block'>
         
       <NavLink
   to="/"
@@ -39,7 +39,7 @@ const Navber = () => {
 </NavLink>
 </li>    
 
-<li  className='text-[18px] font-bold  hidden lg:block'>
+<li  className='lg:text-[18px] font-bold  hidden lg:block'>
 <NavLink
   to="/statistic"
   className={({ isActive, isPending }) =>
@@ -49,15 +49,15 @@ const Navber = () => {
 Statistic
 </NavLink>
         
-</li>
+</li>  
 </div>
       <li>
         <details className='lg:hidden menu ' >
           <summary>
-          <HiOutlineViewList className='text-3xl lg:hidden'></HiOutlineViewList>
+          <HiOutlineViewList className='text-3xl lg:hidden'>     </HiOutlineViewList>
           </summary>
-          <ul className="p-2 mx-3 bg-base-100 lg:hidden">
-          <li className='text-[18px] font-bold mr-8 '>
+          <ul className="lg:p-2 lg:mx-3 bg-base-100 lg:hidden">
+          <li className='lg:text-[18px] font-bold lg:mr-8 '>
         
         <NavLink
     to="/"
@@ -70,7 +70,7 @@ Statistic
   
   </li>
   
-  <li  className='text-[18px] font-bold mr-8 '>
+  <li  className='lg:text-[18px] font-bold lg:mr-8 '>
   <NavLink
     to="/donation"
     className={({ isActive, isPending }) =>
@@ -81,7 +81,7 @@ Statistic
   </NavLink>
   </li>    
   
-  <li  className='text-[18px] font-bold lg:ml-8 '>
+  <li  className='lg:text-[18px] font-bold lg:mr-8 '>
   <NavLink
     to="/statistic"
     className={({ isActive, isPending }) =>
