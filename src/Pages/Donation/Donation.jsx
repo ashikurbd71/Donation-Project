@@ -19,11 +19,11 @@ const Donation = () => {
         <>
         <div className='grid md:grid-cols-2 grid-cols-1 mx-auto max-w-screen-xl my-10 gap-5 px-5 lg:px-0'>
             {
-                donationdata.slice(0,deletes).map(data => <Donationdatacard data={data} key={data.id}></Donationdatacard> )
+                donationdata?.slice(0,deletes).map(data => <Donationdatacard data={data} key={data.id}></Donationdatacard> )
             }
         </div>
-          <div className={deletes == donationdata.length  && 'hidden'}>
-          <button onClick={() => setDeltes(donationdata.length)} className="btn btn-neutral flex justify-center mx-auto mb-10 bg-[#009444] border-none text-white " >Show All</button>
+          <div className={deletes == donationdata?.length  && 'hidden'}>
+          <button onClick={() => setDeltes(donationdata?.length)} className="btn btn-neutral flex justify-center mx-auto mb-10 bg-[#009444] border-none text-white " >Show All</button>
           </div>
         </>
     );

@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react';
 import Banner from '../../Component/Header/Banner/Banner';
 import Navber from '../../Component/Header/Navber/Navber';
 import Donation from '../../Component/Donation/Donation';
-import { useLoaderData } from 'react-router-dom';
+
 
 const Home = () => {
 
-    
+   
      
     return (
 

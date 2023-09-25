@@ -9,7 +9,7 @@ const Donation = ({donation}) => {
 
       useEffect(() => {
 
-        fetch('donation.json')
+        fetch('/donation.json')
         .then(res => res.json())
         .then(data =>{
          setDonation(data)
@@ -22,7 +22,7 @@ const Donation = ({donation}) => {
 
   
 
-      const [inputvalue , setInputvlue] =  useState()
+      const [inputvalue , setInputvlue] =  useState('')
 
       const serachinput = inputtext => {
 
