@@ -8,12 +8,12 @@ const Donationdatacard = ({data}) => {
         <div className=''>
              <div>
        
-           <div className="card card-compact mb-2   shadow-lg" style={{background: `${card_bg}`}}>
+           <div className="card card-compact my-5   shadow-lg" style={{background: `${card_bg}`}}>
             <div className='flex '>
 
           
      <div>
-     <figure><img src={picture} className='lg:h-[250px] w-[300px] ' alt="Shoes" /></figure>
+     <figure><img src={picture} className='h-[250px] w-[300px] ' alt="Shoes" /></figure>
      </div>
 
       <div>

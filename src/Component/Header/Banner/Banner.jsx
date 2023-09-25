@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Banner = () => {
+const Banner = ({searchinput,serachvalue }) => {
     return (
         <div className=' bg-[#FFFFFFF2] lg:h-[70vh] lg:mb-10 px-5 lg:px-0'>
                  <div className='lg:py-32 py-14'>
@@ -11,10 +11,10 @@ const Banner = () => {
 
 
 
-                 <input type="text" placeholder="Search here...." className="input rounded-none items-center input-bordered w-full max-w-xs" />
+                 <input onChange={(e) => searchinput(e.target.value)} type="text" placeholder="Search here...." className="input rounded-none items-center input-bordered w-full max-w-xs" />
 
                  
-                  <button className="btn btn-accent rounded-none text-[#FFF] text-[16px] font-semibold">Search</button>
+                  <button onClick={serachvalue} className="btn btn-accent rounded-none text-[#FFF] text-[16px] font-semibold">Search</button>
                 
                  </div>
                  </div>
