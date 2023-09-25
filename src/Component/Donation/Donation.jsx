@@ -31,7 +31,7 @@ const Donation = ({donation}) => {
 
       const serachvalue = () => {
 
-        const search = donations.filter(data => data.category == inputvalue)
+        const search = donations?.filter(data => data.category.toLowerCase() == inputvalue.toLowerCase())
          setShowitem(search)
       }
     
@@ -44,7 +44,7 @@ const Donation = ({donation}) => {
    </div>
    
 
-        <div className='grid lg:grid-cols-4 grid-cols-1 md:grid-cols-2 px-5 gap-5 lg:px-0'>
+        <div className='grid lg:grid-cols-4 mb-10 grid-cols-1 md:grid-cols-2 px-5 gap-5 lg:px-0'>
         
          {
             showItem?.map(donation => <Donationcard donation ={donation } key={donation.id}></Donationcard>)
