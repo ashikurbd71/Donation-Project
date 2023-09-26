@@ -31,7 +31,7 @@ const Donation = () => {
           <div className={
 
 // deletes === donationdata?.length ||
- donationdata?.length > 4 ? 'hidden' : 'block' 
+         donationdata?.length > 4 ? 'block' : 'hidden' 
 
           }>
             

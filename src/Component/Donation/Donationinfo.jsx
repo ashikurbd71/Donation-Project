@@ -23,7 +23,7 @@ const Donationinfo = () => {
     return (
         <div>
            
-           <div className=''>
+           <div className='px-10 lg:px-0'>
            <Donationinfocard donainfo={donainfo} ></Donationinfocard>
            </div>
          

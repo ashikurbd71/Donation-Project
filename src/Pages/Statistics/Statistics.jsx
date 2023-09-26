@@ -76,7 +76,7 @@ export default function App() {
 
     </div>
 
-<div className="flex gap-3 justify-center mb-20">
+<div className="lg:flex md:flex  mx-24  justify-center mb-20">
 <div className="flex items-center gap-1">
       <h1 className="text-xl font-semibold">Your Donation : </h1>
       <div className="w-14 h-2 bg-red-500">

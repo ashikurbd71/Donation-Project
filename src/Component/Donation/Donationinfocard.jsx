@@ -56,12 +56,12 @@ const Donationinfocard = ({donainfo}) => {
        
     return (
         <div>
-            <div className="card card-compact mt-14 mx-auto w-6/12 flex rounded-none justify-center h-auto max-w-screen-xl bg-base-100 shadow-xl" style={{background:`${card_bg}`}}>
+            <div className="card card-compact  mt-14 mx-auto lg:w-6/12 flex rounded-none justify-center h-auto max-w-screen-xl bg-base-100 shadow-xl" style={{background:`${card_bg}`}}>
 
     <div className='relative'>
     <figure><img src={picture} className='w-full h-[300px]' alt="Shoes" /></figure>
 
-      <div className='absolute bottom-0 lg:bg-[#0B0B0B80] lg:w-[684px]  py-4'>
+      <div className='absolute bottom-0 lg:bg-[#0B0B0B80] md:bg-[#0B0B0B80]  lg:w-[684px] md:w-[684px]   py-4'>
       <button onClick={handleadd} className="btn btn-neutral ml-4 border-none " style={{background: `${button_bg} `}}>Donate ${price}</button>
       </div>
     </div>
