@@ -1,8 +1,9 @@
-# React + Vite
+# 3 project Features
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# The website has three pages.The homepage has a banner nab bar with a search bar and twelve cards
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Clicking on one of the twelve cards will take him to another page and show that card's information.
+
+# When the user clicks on the donate button he is on the donation page of his cards.  On the statistics page he can see the percentage of the number of cards he has added to the donation page in a chart.
+
