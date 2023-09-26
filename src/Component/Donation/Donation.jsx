@@ -52,7 +52,7 @@ const Donation = ({donation}) => {
         <div className='grid lg:grid-cols-4 mb-10 grid-cols-1 md:grid-cols-2 px-5 gap-5 lg:px-0'>
         
          {
-            showItem?.map(donation => <Donationcard donation ={donation } key={donation.id}></Donationcard>)
+            showItem?.map(donation => <Donationcard donation ={donation} key={donation?.id}></Donationcard>)
          }
         </div>
 

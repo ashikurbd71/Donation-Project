@@ -15,7 +15,7 @@ const Donationinfo = () => {
 
      useEffect(() => {
 
-          const donainfos = donationinfo.find( info => info.id == id)
+          const donainfos = donationinfo?.find( info => info.id == id)
          setDonainfo(donainfos)
      },[id,donationinfo])
    
@@ -24,7 +24,7 @@ const Donationinfo = () => {
         <div>
            
            <div className='px-10 lg:px-0'>
-           <Donationinfocard donainfo={donainfo} ></Donationinfocard>
+           <Donationinfocard donainfo ={donainfo} ></Donationinfocard>
            </div>
          
         </div>

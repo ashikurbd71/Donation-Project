@@ -16,10 +16,21 @@ const Donationinfocard = ({donainfo}) => {
 
                  adddonation.push(donainfo)
                  localStorage.setItem('item',JSON.stringify(adddonation))
+
+                 return(
+
+                  Swal.fire({
+                      position: 'top-end',
+                      icon: 'success',
+                      title: 'Add Successfuly',
+                      showConfirmButton: false,
+                      timer: 1500
+                    })
+               )
                 
              } else{
 
-                 const exits = finddonation.find(item => item.id === id)
+                 const exits = finddonation?.find(item => item.id === id)
 
                    if(!exits){
                     adddonation.push(...finddonation,donainfo)
@@ -61,7 +72,7 @@ const Donationinfocard = ({donainfo}) => {
     <div className='relative'>
     <figure><img src={picture} className='w-full h-[300px]' alt="Shoes" /></figure>
 
-      <div className='absolute bottom-0 lg:bg-[#0B0B0B80] md:bg-[#0B0B0B80]  lg:w-[684px] md:w-[684px]   py-4'>
+      <div className='absolute bottom-0 lg:bg-[#0B0B0B80] md:bg-[#0B0B0B80]  lg:w-[675px] md:w-[684px]   py-4'>
       <button onClick={handleadd} className="btn btn-neutral ml-4 border-none " style={{background: `${button_bg} `}}>Donate ${price}</button>
       </div>
     </div>

@@ -28,14 +28,20 @@ const Donation = () => {
                 donationdata?.slice(0,deletes).map(data => <Donationdatacard data={data} key={data.id}></Donationdatacard> )
             }
         </div>
+
+
           <div className={
 
-// deletes === donationdata?.length ||
-         donationdata?.length > 4 ? 'block' : 'hidden' 
+
+         donationdata?.length == deletes && 'hidden' 
+         
 
           }>
             
-          <button  onClick={() => setDeltes(donationdata?.length)} className="btn btn-neutral flex justify-center mx-auto mb-10 bg-[#009444] border-none text-white " >Show All</button>
+          {
+           donationdata?.length >= 4 && <button  onClick={() => setDeltes(donationdata?.length)} className="btn btn-neutral flex justify-center mx-auto mb-10 bg-[#009444] border-none text-white " >Show All</button>
+            
+            }
           </div>
         </>
     );

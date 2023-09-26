@@ -30,7 +30,7 @@ const Navber = () => {
 
 <li  className='text-[18px] font-bold mr-8 hidden lg:block'>
 <NavLink
-  to="/donation"
+  to="/donations"
   className={({ isActive, isPending }) =>
     isPending ? "pending" : isActive ? "text-[#FF444A] underline" : " "
   }
@@ -72,7 +72,7 @@ Statistic
   
   <li  className='lg:text-[18px] font-bold lg:mr-8 '>
   <NavLink
-    to="/donation"
+    to="/donations"
     className={({ isActive, isPending }) =>
       isPending ? "pending" : isActive ? "text-[#FF444A] underline" : " "
     }

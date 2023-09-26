@@ -23,7 +23,7 @@ import Error from '../Component/Error/Error';
            
         },
         {
-            path: "/donation",
+            path: "/donations",
             element:<Donation></Donation>
         },
         {
@@ -34,7 +34,7 @@ import Error from '../Component/Error/Error';
         {
             path: "/donationinfo/:id",
             element:<Donationinfo></Donationinfo>,
-            loader: () => fetch('donation.json')
+            loader: () => fetch('/donation.json')
         },
 
         

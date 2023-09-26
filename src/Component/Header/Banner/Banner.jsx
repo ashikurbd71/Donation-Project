@@ -4,7 +4,7 @@ const Banner = ({searchinput,serachvalue }) => {
 
      
     return (
-        <div className=' bg-[#FFFFFFF2] lg:h-[70vh]  lg:mb- mb-20 px-5 lg:px-0 bg-opacity-80 bg-blend-overlay' style={{backgroundImage: 'url("/cover1.jpg") '  }}>
+        <div className='  bg-slate-300 h-auto lg:w-auto  lg:mb- mb-20 px-5 lg:px-0 bg-opacity-90 bg-v bg-blend-overlay' style={{backgroundImage: 'url("/cover1.jpg") '  }}>
 
 
 
