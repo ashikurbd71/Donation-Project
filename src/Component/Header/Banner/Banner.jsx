@@ -1,6 +1,8 @@
 import React from 'react';
 
 const Banner = ({searchinput,serachvalue }) => {
+
+     
     return (
         <div className=' bg-[#FFFFFFF2] lg:h-[70vh]  lg:mb- mb-20 px-5 lg:px-0 bg-opacity-80 bg-blend-overlay' style={{backgroundImage: 'url("/cover1.jpg") '  }}>
 
@@ -16,6 +18,7 @@ const Banner = ({searchinput,serachvalue }) => {
 
 
                  <input onChange={(e) => searchinput(e.target.value)} type="text" placeholder="Search here...." className="input  rounded-none items-center input-bordered w-full max-w-xs" />
+
 
                  
                   <button onClick={serachvalue} className="btn btn-accent rounded-none text-[#FFF] text-[16px] font-semibold bg-[#FF444A] border-none">Search</button>

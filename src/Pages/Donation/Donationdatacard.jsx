@@ -3,7 +3,7 @@ import React from 'react';
 const Donationdatacard = ({data}) => {
      console.log(data)
 
-     const{category,title,picture,category_bg,card_bg,text_button_bg,id,price}= data
+     const{category,title,picture,category_bg,card_bg,text_button_bg,id,price,button_bg}= data
     return (
         <div className=''>
              <div>
@@ -23,7 +23,7 @@ const Donationdatacard = ({data}) => {
     <p className='text-[22px] font-semibold'>{title}</p>
     <p className='text-[20px] font-semibold' style={{color: `${text_button_bg}`}}>${price}</p>
 
-    <button  className="btn btn-neutral  border-none text-white " style={{background: `${category_bg} `}}>View Details</button>
+    <button  className="btn btn-neutral  border-none text-white " style={{background: `${button_bg} `}}>View Details</button>
     
       </div>
      

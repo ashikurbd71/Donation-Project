@@ -14,7 +14,13 @@ const Donation = () => {
            
 
        },[])
+
+
+
+
     return (
+
+        
 
         <>
         <div className='grid md:grid-cols-2 grid-cols-1 mx-auto max-w-screen-xl my-10 gap-5 px-5 lg:px-0'>
@@ -23,11 +29,13 @@ const Donation = () => {
             }
         </div>
           <div className={
-        
-    donationdata?.length > 4 ? 'block' : 'hidden' 
+
+// deletes === donationdata?.length ||
+ donationdata?.length > 4 ? 'hidden' : 'block' 
 
           }>
-          <button onClick={() => setDeltes(donationdata?.length)} className="btn btn-neutral flex justify-center mx-auto mb-10 bg-[#009444] border-none text-white " >Show All</button>
+            
+          <button  onClick={() => setDeltes(donationdata?.length)} className="btn btn-neutral flex justify-center mx-auto mb-10 bg-[#009444] border-none text-white " >Show All</button>
           </div>
         </>
     );

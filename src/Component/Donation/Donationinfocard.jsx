@@ -4,7 +4,7 @@ import Swal from 'sweetalert2'
 const Donationinfocard = ({donainfo}) => {
 
 
-     const{title,picture,category_bg,card_bg,text_button_bg,id,description,price}= donainfo
+     const{title,picture,category_bg,card_bg,text_button_bg,id,description,price,button_bg}= donainfo
 
      const handleadd = () => {
 
@@ -62,7 +62,7 @@ const Donationinfocard = ({donainfo}) => {
     <figure><img src={picture} className='w-full h-[300px]' alt="Shoes" /></figure>
 
       <div className='absolute bottom-0 lg:bg-[#0B0B0B80] lg:w-[684px]  py-4'>
-      <button onClick={handleadd} className="btn btn-neutral ml-4 border-none " style={{background: `${category_bg} `}}>Donate ${price}</button>
+      <button onClick={handleadd} className="btn btn-neutral ml-4 border-none " style={{background: `${button_bg} `}}>Donate ${price}</button>
       </div>
     </div>
 
