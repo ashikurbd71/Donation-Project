@@ -56,7 +56,7 @@ const Donationinfocard = ({donainfo}) => {
        
     return (
         <div>
-            <div className="card card-compact  mt-14 mx-auto lg:w-6/12 flex rounded-none justify-center h-auto max-w-screen-xl bg-base-100 shadow-xl" style={{background:`${card_bg}`}}>
+            <div className="card card-compact my-36 lg:mt-14 mx-auto lg:w-6/12 flex rounded-none justify-center h-auto max-w-screen-xl bg-base-100 shadow-xl" style={{background:`${card_bg}`}}>
 
     <div className='relative'>
     <figure><img src={picture} className='w-full h-[300px]' alt="Shoes" /></figure>

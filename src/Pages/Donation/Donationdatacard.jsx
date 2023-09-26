@@ -8,7 +8,7 @@ const Donationdatacard = ({data}) => {
         <div className=''>
              <div>
        
-           <div className="card card-compact my-5   shadow-lg" style={{background: `${card_bg}`}}>
+           <div className="card card-compact     shadow-lg" style={{background: `${card_bg}`}}>
             <div className='flex '>
 
           
