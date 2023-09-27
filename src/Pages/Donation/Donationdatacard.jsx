@@ -1,9 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 const Donationdatacard = ({data}) => {
      console.log(data)
 
+
+
      const{category,title,picture,category_bg,card_bg,text_button_bg,id,price,button_bg}= data
+
     return (
         <div className=''>
              <div>
@@ -23,7 +28,8 @@ const Donationdatacard = ({data}) => {
     <p className='lg:text-[22px] text-xl font-semibold'>{title}</p>
     <p className='lg:text-[20px] text-lg font-semibold' style={{color: `${text_button_bg}`}}>${price}</p>
 
-    <button  className="btn btn-neutral  border-none text-white " style={{background: `${button_bg} `}}>View Details</button>
+<Link to={`/donationinfo/${id}`}>
+    <button className="btn btn-neutral  border-none text-white " style={{background: `${button_bg} `}}>View Details</button>  </Link>
     
       </div>
      
