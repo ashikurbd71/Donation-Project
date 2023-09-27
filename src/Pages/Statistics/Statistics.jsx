@@ -54,7 +54,7 @@ export default function App() {
   return (
 
     <>
-     <div className="w-ful h-screen mt-10 lg:mt-0 flex justify-center items-center">
+     <div className="w-ful h-screen mt-14 lg:mt-0 flex justify-center items-center">
     <PieChart width={400} height={400}>
       <Pie
         data={data}
@@ -77,8 +77,8 @@ export default function App() {
 
     </div>
 
-<div className="lg:flex md:flex gap-3 lg:mx-24 mx-36 mt-10 lg:mt-0  justify-center mb-20">
-<div className="flex items-center gap-1">
+<div className="lg:flex md:flex gap-3 lg:mx-24 mx-10 mt-20 lg:mt-0  justify-center mb-20">
+<div className="flex items-center  gap-1">
       <h1 className="lg:text-xl font-semibold">Your Donation  </h1>
       <div className="w-14 h-3 rounded-lg bg-red-500">
           </div>

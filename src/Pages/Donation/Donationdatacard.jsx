@@ -20,8 +20,8 @@ const Donationdatacard = ({data}) => {
 
       <div className="card-body space-y-2">
     <h2 className= "card-title  text-[16px] bg-[${category_bg}]  font-medium  px-2 w-[60%] text-center border-2" style={{color: `${text_button_bg}`, background :`${category_bg}`}}>{category}</h2>
-    <p className='text-[22px] font-semibold'>{title}</p>
-    <p className='text-[20px] font-semibold' style={{color: `${text_button_bg}`}}>${price}</p>
+    <p className='lg:text-[22px] text-xl font-semibold'>{title}</p>
+    <p className='lg:text-[20px] text-lg font-semibold' style={{color: `${text_button_bg}`}}>${price}</p>
 
     <button  className="btn btn-neutral  border-none text-white " style={{background: `${button_bg} `}}>View Details</button>
     

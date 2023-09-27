@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Donationcard from './Donationcard';
 import Banner from '../Header/Banner/Banner';
-
+import Swal from 'sweetalert2'
 const Donation = ({donation}) => {
    
    const [donations , setDonation] = useState([])
@@ -27,6 +27,8 @@ const Donation = ({donation}) => {
       const serachinput = inputtext => {
 
            setInputvlue(inputtext)
+
+       
       }
 
    
@@ -34,8 +36,19 @@ const Donation = ({donation}) => {
       const serachvalue = () => {
 
         const search = donations?.filter(data => data.category.toLowerCase() == inputvalue.toLowerCase())
-         setShowitem(search)
+         
 
+           if(search.length === 0){
+
+            return (
+
+
+            Swal.fire('Enter Category Name!'))
+            
+           }else{
+
+            setShowitem(search)
+           }
        
       }
 
